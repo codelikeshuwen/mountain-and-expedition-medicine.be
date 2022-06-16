@@ -1,5 +1,5 @@
 <template>
 
-<h2>ContactPage</h2>
+<h2>Home Page</h2>
     
 </template>
