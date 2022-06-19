@@ -1,30 +1,14 @@
-<template>
-  <PageHeader/>
-  <PageMain/>
-  <PageFooter/>
-</template>
-
 <script>
-
-import PageHeader from './components/PageHeader.vue'
-import PageMain from './components/PageMain.vue'
-import PageFooter from './components/PageFooter.vue'
-
- export default {
-  name: 'App',
-  components: {
-    PageHeader,
-    PageMain,
-    PageFooter
-  }, 
-  data () {
-    return {
-
-    }
-  }
- }
+export default {
+  name: "App",
+  data() {
+    return {};
+  },
+};
 </script>
 
-<style>
+<template>
+  <router-view></router-view>
+</template>
 
-</style>
+<style></style>
