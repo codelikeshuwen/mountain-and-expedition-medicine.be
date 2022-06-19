@@ -23,7 +23,7 @@
 }
 
 .language a {
-  color: red;
+  color: white;
   background-color: rgba(0, 0, 0, 0.3);
 }
 </style>

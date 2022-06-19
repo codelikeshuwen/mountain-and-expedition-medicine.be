@@ -25,4 +25,10 @@ export default {
 #home.page {
   background-image: url("@/assets/images/bg-alpine.jpg");
 }
+
+.page {
+  background-attachment: fixed;
+  background-position: top;
+  background-size: cover;
+}
 </style>

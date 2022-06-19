@@ -11,4 +11,14 @@ export default {
   <router-view></router-view>
 </template>
 
-<style></style>
+<style>
+html,
+body,
+#app,
+.page {
+  height: 100%;
+}
+body {
+  margin: 0px;
+}
+</style>
