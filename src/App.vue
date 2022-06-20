@@ -12,7 +12,7 @@ export default {
 </template>
 
 <style>
-/* html,
+html,
 body,
 #app,
 .page {
@@ -20,5 +20,5 @@ body,
 }
 body {
   margin: 0px;
-} */
+}
 </style>

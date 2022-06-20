@@ -15,8 +15,8 @@ export default {
   <div id="home" class="page">
     <PageHeader />
     <main>
-      <div class="blk-bg">
-        <div class="blk-container">
+      <div class="bg">
+        <div id="home" class="container">
           <div class="textbox">
             <h1>MEDICAL ADVICE & GUIDANCE</h1>
             <h2>
@@ -81,27 +81,30 @@ main {
   justify-content: center;
 }
 
-.blk-bg {
+.bg {
   background-color: rgba(0, 0, 0, 0.3);
   width: 850px;
-  height: 583px;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 15px;
 }
 
-.blk-container {
+.container {
   background-color: rgba(26, 26, 26, 0.85);
   width: 790px;
-  height: 523px;
+  height: auto;
   padding: 30px;
   display: flex;
+}
+
+#home.container {
   align-items: flex-start;
   gap: 4%;
 }
 
-h1 {
+.textbox h1 {
   font-family: "Maven Pro", sans-serif;
   font-weight: 900;
   font-size: 24px;
@@ -114,18 +117,20 @@ h2 {
   font-size: 14px;
 }
 
+.language a,
 p,
 li {
   font-family: "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", sans-serif;
   font-size: 13px;
   line-height: 20px;
+  columns: white;
 }
 
 .textbox {
   color: white;
 }
 
-.blk-container img {
+#home img {
   max-width: 300px;
   object-fit: contain;
 }

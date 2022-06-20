@@ -24,7 +24,8 @@
 #main-header {
   display: flex;
   flex-direction: column;
-  width: 865px;
+  width: 880px;
+  padding: 2% 0;
 }
 
 .language {
@@ -47,8 +48,8 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 2%;
-  width: 865px;
+  padding: 2% 0;
+  width: 880px;
 }
 .header nav {
   display: flex;
