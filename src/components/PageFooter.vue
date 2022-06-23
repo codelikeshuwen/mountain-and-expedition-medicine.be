@@ -11,7 +11,7 @@
 footer {
   display: flex;
   justify-content: center;
-  padding-bottom: 15%;
+  padding-bottom: 100px;
 }
 
 .footer-container {

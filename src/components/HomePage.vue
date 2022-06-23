@@ -79,6 +79,8 @@ export default {
 main {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  gap: 1vh;
 }
 
 .bg {
