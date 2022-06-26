@@ -169,6 +169,6 @@ h5 {
 #forwho.container img {
   width: 244px;
   object-fit: contain;
-  border: 2px, solid, white;
+  border: 2px solid white;
 }
 </style>
