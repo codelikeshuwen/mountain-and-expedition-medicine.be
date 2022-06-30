@@ -136,4 +136,25 @@ li {
   max-width: 300px;
   object-fit: contain;
 }
+
+@media screen and (max-width: 800px) {
+  .bg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  .container {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+
+  #home img {
+    width: 80%;
+    padding: 20px;
+  }
+}
 </style>

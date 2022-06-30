@@ -48,8 +48,8 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 2% 0;
-  width: 880px;
+  padding: 2%;
+  width: 865px;
 }
 .header nav {
   display: flex;
@@ -66,5 +66,23 @@
   background-color: rgba(0, 0, 0, 0.3);
   white-space: nowrap;
   padding: 5px 7px 2px;
+}
+
+@media screen and (max-width: 800px) {
+  #main-header {
+    width: 100%;
+  }
+
+  .header nav {
+    flex-direction: column;
+    gap: 4%;
+    justify-content: center;
+  }
+
+  .header {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 </style>

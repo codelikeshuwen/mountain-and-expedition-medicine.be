@@ -23,4 +23,12 @@ footer {
 footer p {
   color: white;
 }
+
+@media screen and (max-width: 800px) {
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+}
 </style>
