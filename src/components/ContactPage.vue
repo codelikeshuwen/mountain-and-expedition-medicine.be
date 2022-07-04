@@ -85,5 +85,12 @@ h4 {
   width: 200px;
   object-fit: contain;
   border: 2px solid white;
+  margin: 30px 0px;
+}
+
+@media screen and (max-width: 800px) {
+  #contact.container img {
+    margin: 30px 0px;
+  }
 }
 </style>

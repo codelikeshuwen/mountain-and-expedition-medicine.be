@@ -84,5 +84,11 @@
     flex-direction: column;
     align-items: center;
   }
+
+  .header img {
+    width: 80%;
+    padding: 20px;
+    max-width: 300px;
+  }
 }
 </style>

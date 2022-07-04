@@ -15,7 +15,7 @@ export default {
   <div id="forwho" class="page">
     <PageHeader />
     <main id="forwho">
-      <div id="forwho" class="bg">
+      <div class="bg">
         <div id="forwho" class="container">
           <div class="textbox">
             <h5>FOR</h5>
@@ -148,11 +148,6 @@ main #forwho {
   display: flex;
 }
 
-#forwho.bg {
-  display: flex;
-  flex-direction: column;
-}
-
 #forwho.container {
   width: 760px;
   justify-content: space-between;
@@ -170,5 +165,12 @@ h5 {
   width: 244px;
   object-fit: contain;
   border: 2px solid white;
+}
+
+@media screen and (max-width: 800px) {
+  #forwho.container {
+    width: 100%;
+    justify-content: space-between;
+  }
 }
 </style>

@@ -152,6 +152,13 @@ li {
     flex-direction: column-reverse;
   }
 
+  .language a,
+  p,
+  li {
+    line-height: 3vh;
+    font-size: 16px;
+  }
+
   #home img {
     width: 80%;
     padding: 20px;
