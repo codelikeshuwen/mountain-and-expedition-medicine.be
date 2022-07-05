@@ -6,7 +6,9 @@ export default {
   name: "ContactPage",
   components: { PageHeader, PageFooter },
   data() {
-    return {};
+    return {
+      language: "nl",
+    };
   },
 };
 </script>
@@ -19,11 +21,12 @@ export default {
         <div id="contact" class="container">
           <img
             src="@/assets/images/dokter-wim-hullaert.jpg"
-            alt="docter-img2"
+            alt="Doctor Wim Hullaert"
           />
 
           <div class="textbox">
-            <h1>GET IN TOUCH</h1>
+            <h1 v-if="language === 'en'">GET IN TOUCH</h1>
+            <h1 v-if="language === 'nl'">NEEM CONTACT OP</h1>
             <p>
               Are you planning an expedition? Preparing for a super marathon?
               Get in touch for medical advice, guidance, vaccinations and
