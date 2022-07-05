@@ -9,7 +9,7 @@
       <div class="header">
         <img src="@/assets/images/mountain-and-expedition-medicine.png" />
         <nav>
-          <router-link to="/">Dr WIM HULLAEERT</router-link>
+          <router-link to="/">Dr WIM HULLAERT</router-link>
           <router-link to="/for-who">FOR WHO</router-link>
           <router-link to="/contact">CONTACT</router-link>
         </nav>

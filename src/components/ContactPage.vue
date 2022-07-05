@@ -27,14 +27,25 @@ export default {
           <div class="textbox">
             <h1 v-if="language === 'en'">GET IN TOUCH</h1>
             <h1 v-if="language === 'nl'">NEEM CONTACT OP</h1>
-            <p>
+            <p v-if="language === 'en'">
               Are you planning an expedition? Preparing for a super marathon?
               Get in touch for medical advice, guidance, vaccinations and
               fysical tests to prepare you for your challenges.
             </p>
+            <p v-if="language === 'nl'">
+              Gaat u op expeditie? Bereidt u zich voor op een super marathon?
+              Neem contact op voor medisch advies, begeleiding, vaccinaties en
+              fysische proeven .
+            </p>
 
             <h3>Doctor Wim Hullaert</h3>
-            <h4>Dorpsstraat 46, 9080 Lochristi, BELGIUM</h4>
+            <h4 v-if="language === 'en'">
+              Dorpsstraat 46, 9080 Lochristi, BELGIUM
+            </h4>
+            <h4 v-if="language === 'nl'">
+              Dorpsstraat 46, 9080 Lochristi, BELGIE
+            </h4>
+
             <h4>+32 475787118</h4>
             <a href="mailto:whullaert@yahoo.com">whullaert@yahoo.com</a>
           </div>
