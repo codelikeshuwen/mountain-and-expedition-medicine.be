@@ -27,8 +27,9 @@ footer p {
 @media screen and (max-width: 800px) {
   .footer-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
+    padding: 0 5vh;
   }
 }
 </style>

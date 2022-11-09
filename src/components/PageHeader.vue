@@ -90,5 +90,16 @@
     padding: 20px;
     max-width: 300px;
   }
+
+  .header a {
+    line-height: 7vh;
+    margin-top: 2vh;
+    font-size: 4vh;
+  }
+
+  .language {
+    justify-content: center;
+    gap: 4%;
+  }
 }
 </style>
