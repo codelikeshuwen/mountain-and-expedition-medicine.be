@@ -17,7 +17,8 @@ const router = createRouter ({
     
 });
 
-const app = createApp(App).use(i18n);
+const app = createApp(App);
+app.use(i18n);
 app.use(router);
 app.mount( "#app" );
 

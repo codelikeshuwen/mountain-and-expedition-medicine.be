@@ -1,17 +1,17 @@
 <template>
   <section id="main-header">
     <div class="language">
-      <a href="#">Nederlands</a>
-      <a href="#">English</a>
+      <a href="https://bergenexpeditiegeneeskunde.be">Nederlands</a>
+      <a href="https://mountainandexpeditionmedicine.be">English</a>
     </div>
 
     <div class="header-container">
       <div class="header">
         <img src="@/assets/images/mountain-and-expedition-medicine.png" />
         <nav>
-          <router-link to="/">Dr WIM HULLAERT</router-link>
-          <router-link to="/for-who">FOR WHO</router-link>
-          <router-link to="/contact">CONTACT</router-link>
+          <router-link to="/">Dr Wim Hullaert</router-link>
+          <router-link to="/for-who">{{ $t("header.forwho") }}</router-link>
+          <router-link to="/contact">Contact</router-link>
         </nav>
       </div>
     </div>
@@ -56,6 +56,7 @@
   gap: 4%;
   justify-content: center;
   justify-content: flex-end;
+  text-transform: uppercase;
 }
 .header a {
   font-family: "Maven Pro", sans-serif;
@@ -65,7 +66,7 @@
   font-weight: 900;
   background-color: rgba(0, 0, 0, 0.3);
   white-space: nowrap;
-  padding: 5px 7px 2px;
+  padding: 6px 6px;
 }
 
 @media screen and (max-width: 800px) {

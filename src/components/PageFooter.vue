@@ -1,7 +1,7 @@
 <template>
   <footer>
     <div class="footer-container">
-      <p>© 2012 All rights reserved to Dokter Wim Hullaert BVBA</p>
+      <p>© 2022 All rights reserved to Dokter Wim Hullaert BVBA</p>
       <p>Website by Medisites.be</p>
     </div>
   </footer>

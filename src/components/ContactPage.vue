@@ -7,7 +7,7 @@ export default {
   components: { PageHeader, PageFooter },
   data() {
     return {
-      language: "nl",
+      foo: process.env.VUE_APP_LOCALE,
     };
   },
 };
@@ -23,29 +23,11 @@ export default {
             src="@/assets/images/dokter-wim-hullaert.jpg"
             alt="Doctor Wim Hullaert"
           />
-
           <div class="textbox">
-            <h1 v-if="language === 'en'">GET IN TOUCH</h1>
-            <h1 v-if="language === 'nl'">NEEM CONTACT OP</h1>
-            <p v-if="language === 'en'">
-              Are you planning an expedition? Preparing for a super marathon?
-              Get in touch for medical advice, guidance, vaccinations and
-              fysical tests to prepare you for your challenges.
-            </p>
-            <p v-if="language === 'nl'">
-              Gaat u op expeditie? Bereidt u zich voor op een super marathon?
-              Neem contact op voor medisch advies, begeleiding, vaccinaties en
-              fysische proeven .
-            </p>
-
+            <h1>{{ $t("contact.h1") }}</h1>
+            <p>{{ $t("contact.p") }}</p>
             <h3>Doctor Wim Hullaert</h3>
-            <h4 v-if="language === 'en'">
-              Dorpsstraat 46, 9080 Lochristi, BELGIUM
-            </h4>
-            <h4 v-if="language === 'nl'">
-              Dorpsstraat 46, 9080 Lochristi, BELGIE
-            </h4>
-
+            <h4>Dorpsstraat 46, 9080 Lochristi, BELGIUM</h4>
             <h4>+32 475787118</h4>
             <a href="mailto:whullaert@yahoo.com">whullaert@yahoo.com</a>
           </div>
@@ -80,6 +62,7 @@ p {
 
 h1 {
   font-weight: 900;
+  text-transform: uppercase;
 }
 
 h3 {
@@ -93,6 +76,10 @@ h4 {
   font-size: 13px;
   font-weight: 100;
   line-height: 20px;
+}
+
+a {
+  text-decoration: underline;
 }
 
 #contact.container img {
