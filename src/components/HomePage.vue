@@ -6,7 +6,9 @@ export default {
   name: "HomePage",
   components: { PageHeader, PageFooter },
   data() {
-    return {};
+    return {
+      foo: process.env.VUE_APP_LOCALE,
+    };
   },
 };
 </script>
@@ -18,36 +20,36 @@ export default {
       <div class="bg">
         <div id="home" class="container">
           <div class="textbox">
-            <h1>MEDICAL ADVICE & GUIDANCE</h1>
-            <h2>
-              FOR ADVENTURERS, MOUNTAINEERS, SPORTERS AND EXPEDITIONS TO EXTREME
-              / EXOTIC REGIONS
-            </h2>
-            <p>
-              The interest in trekkings in remote areas,in people who want to
-              maximize medical self-reliance, in persons who will make a unique
-              journey (once in a life time) f.e trekking around the Annapurna
-              pushed me to share my knowledge ,and promote best medical practice
-              in remote environments in order to reduce health risks and to
-              increase self-reliance in this areas.
-            </p>
+            <h1>{{ $t("home.h1") }}</h1>
+            <h2>{{ $t("home.h2") }}</h2>
+            <h2>{{ $t("home.p1") }}</h2>
             <ul class="expertise">
-              <li>Course high altitude medicine Cusco Peru 2010</li>
-              <li>Course wilderness & expedition medicine Keswick UK 2012</li>
-              <li>Wilderness&desert course Namibie 2015</li>
-              <li>Mountain medecine course everest basecamp Nepal 2017</li>
-              <li>Expedition medicine course Botswana 2018</li>
-              <li>WEM (world extreme medicine) congres Edinburgh 2021</li>
-
               <li>
-                Advice for outdoor-sporters, expedition members, members of
-                charity organisations who lack medical assistance in remote
-                areas.
+                {{ $t("home.expertise1") }}
               </li>
-              <li>Advice: individual, group sessions , presentations</li>
               <li>
-                Vaccinationshedules, medical kits, endurance performance, gear
-                information
+                {{ $t("home.expertise2") }}
+              </li>
+              <li>
+                {{ $t("home.expertise3") }}
+              </li>
+              <li>
+                {{ $t("home.expertise4") }}
+              </li>
+              <li>
+                {{ $t("home.expertise5") }}
+              </li>
+              <li>
+                {{ $t("home.expertise6") }}
+              </li>
+              <li>
+                {{ $t("home.expertise7") }}
+              </li>
+              <li>
+                {{ $t("home.expertise8") }}
+              </li>
+              <li>
+                {{ $t("home.expertise9") }}
               </li>
             </ul>
           </div>
@@ -115,14 +117,15 @@ main {
 
 h2 {
   font-family: "Maven Pro", sans-serif;
-  font-weight: 900;
+  font-weight: normal;
   font-size: 14px;
+  line-height: 20px;
 }
 
 .language a,
 p,
 li {
-  font-family: "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", sans-serif;
+  font-family: "Maven Pro", sans-serif;
   font-size: 13px;
   line-height: 20px;
   columns: white;
@@ -135,5 +138,33 @@ li {
 #home img {
   max-width: 300px;
   object-fit: contain;
+}
+
+@media screen and (max-width: 800px) {
+  .bg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  .container {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+
+  .language a,
+  p,
+  li {
+    line-height: 3vh;
+    font-size: 16px;
+  }
+
+  #home img {
+    width: 80%;
+    padding: 20px;
+  }
 }
 </style>

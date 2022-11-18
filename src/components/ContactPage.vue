@@ -6,7 +6,9 @@ export default {
   name: "ContactPage",
   components: { PageHeader, PageFooter },
   data() {
-    return {};
+    return {
+      foo: process.env.VUE_APP_LOCALE,
+    };
   },
 };
 </script>
@@ -19,19 +21,13 @@ export default {
         <div id="contact" class="container">
           <img
             src="@/assets/images/dokter-wim-hullaert.jpg"
-            alt="docter-img2"
+            alt="Doctor Wim Hullaert"
           />
-
           <div class="textbox">
-            <h1>GET IN TOUCH</h1>
-            <p>
-              Are you planning an expedition? Preparing for a super marathon?
-              Get in touch for medical advice, guidance, vaccinations and
-              fysical tests to prepare you for your challenges.
-            </p>
-
-            <h3>Doctor Wim Hullaert</h3>
-            <h4>Dorpsstraat 46, 9080 Lochristi, BELGIUM</h4>
+            <h1>{{ $t("contact.h1") }}</h1>
+            <p>{{ $t("contact.p") }}</p>
+            <h3>{{ $t("contact.doctor") }} Wim Hullaert</h3>
+            <h4>Dorpsstraat 46, 9080 Lochristi, {{ $t("contact.belgium") }}</h4>
             <h4>+32 475787118</h4>
             <a href="mailto:whullaert@yahoo.com">whullaert@yahoo.com</a>
           </div>
@@ -66,6 +62,7 @@ p {
 
 h1 {
   font-weight: 900;
+  text-transform: uppercase;
 }
 
 h3 {
@@ -81,9 +78,20 @@ h4 {
   line-height: 20px;
 }
 
+a {
+  text-decoration: underline;
+}
+
 #contact.container img {
   width: 200px;
   object-fit: contain;
   border: 2px solid white;
+  margin: 30px 0px;
+}
+
+@media screen and (max-width: 800px) {
+  #contact.container img {
+    margin: 30px 0px;
+  }
 }
 </style>

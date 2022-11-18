@@ -6,7 +6,9 @@ export default {
   name: "ForWhoPage",
   components: { PageHeader, PageFooter },
   data() {
-    return {};
+    return {
+      foo: process.env.VUE_APP_LOCALE,
+    };
   },
 };
 </script>
@@ -15,123 +17,114 @@ export default {
   <div id="forwho" class="page">
     <PageHeader />
     <main id="forwho">
-      <div id="forwho" class="bg">
-        <div id="forwho" class="container">
-          <div class="textbox">
-            <h5>FOR</h5>
-            <h1>MOUNTAINEERS & ROCK CLIMBERS</h1>
-            <hr />
-            <p>
-              Altitude illness: what , prevention, treatment <br />
-              oxygen: when, how much l/min <br />
-              frostbite: prevention, managing <br />
-              nutrition: what, quality of food , quantity : calories
-            </p>
-          </div>
-          <img src="@/assets/images/mountaineers_0.jpg" alt="moutainners" />
-        </div>
-      </div>
-
       <div class="bg">
         <div id="forwho" class="container">
           <div class="textbox">
-            <h5>FOR</h5>
-            <h1>ATHLETES</h1>
+            <h5>{{ $t("forwho.h5") }}</h5>
+            <h1>{{ $t("forwho.who1") }}</h1>
             <hr />
-            <p>
-              Marathon des sables, Iron man, mountainbike trekkings
-              <br />
-              endurance performance
-              <br />
-              nutrition : energy- and fluid balance
-              <br />
-              acclimatisation.
-            </p>
-          </div>
-          <img src="@/assets/images/desert-bikers_0.jpg" alt="desert-bikers" />
-        </div>
-      </div>
-
-      <div class="bg">
-        <div id="forwho" class="container">
-          <div class="textbox">
-            <h5>FOR</h5>
-            <h1>DESERT EXPEDITIONS</h1>
-            <hr />
-            <p>
-              acclimatisation
-              <br />
-              heat related illness: what, prevention, treatment
-              <br />
-              clothing , fluid intake
-              <br />
-              scorpione- and snakebites : envenomation : prevention , treatment
-            </p>
-          </div>
-          <img src="@/assets/images/desert_0.jpg" alt="desert" />
-        </div>
-      </div>
-
-      <div class="bg">
-        <div id="forwho" class="container">
-          <div class="textbox">
-            <h5>FOR</h5>
-            <h1>JUNGLE EXPEDITIONS</h1>
-            <hr />
-            <p>
-              The hazards and challenges of humid tropical environments
-              <br />
-              tropical diseases: malaria, dengue
-              <br />
-              insect bites , leeches
-              <br />
-              skin diseases and woudinfection: prevention, management clothing.
-            </p>
-          </div>
-          <img src="@/assets/images/jungle_0.jpg" alt="jungle" />
-        </div>
-      </div>
-
-      <div class="bg">
-        <div id="forwho" class="container">
-          <div class="textbox">
-            <h5>FOR</h5>
-            <h1>POLE EXPEDITIONS</h1>
-            <hr />
-            <p>
-              For any one challenging the Arctic North (Siberia, Alaska, Canada,
-              North Pole) or the Antartic South (Antartica).
-              <br />
-              Hypothermia: prevention, managing
-
-              <br />
-              Deshydratation: what , prevention
-            </p>
+            <p>{{ $t("forwho.description1") }}</p>
           </div>
           <img
-            src="@/assets/images/pole-expedition-member.jpg"
-            alt="pole-expedition-member"
+            src="@/assets/images/mountaineers_0.jpg"
+            alt="moutainners"
+            width="240"
+            height="160"
           />
         </div>
       </div>
+      <div class="bg">
+        <div id="forwho" class="container">
+          <div class="textbox">
+            <h5>{{ $t("forwho.h5") }}</h5>
+            <h1>{{ $t("forwho.who2") }}</h1>
+            <hr />
+            <p>{{ $t("forwho.description2") }}</p>
+          </div>
+          <div class="img">
+            <img
+              src="@/assets/images/desert-bikers_0.jpg"
+              alt="desert-bikers"
+              width="240"
+              height="144"
+            />
+          </div>
+        </div>
+      </div>
 
       <div class="bg">
         <div id="forwho" class="container">
           <div class="textbox">
-            <h5>FOR</h5>
-            <h1>CAVE & DEEP-SEA DIVERS</h1>
+            <h5>{{ $t("forwho.h5expedities") }}</h5>
+            <h1>{{ $t("forwho.who3") }}</h1>
             <hr />
-            <p>
-              The risks and challenges of deep-see diving (decompression,
-              preparations,, how to deal with sharks and other see creatures,
-              coral cuts)
-              <br />
-              The bends, barotrauma : prevention, managing
-              <br />
-              Dive tables
-            </p>
+            <p>{{ $t("forwho.description3") }}</p>
           </div>
-          <img src="@/assets/images/diver_0.jpg" alt="diver" />
+          <div class="img">
+            <img
+              src="@/assets/images/desert_0.jpg"
+              alt="desert"
+              width="240"
+              height="146"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="bg">
+        <div id="forwho" class="container">
+          <div class="textbox">
+            <h5>{{ $t("forwho.h5expedities") }}</h5>
+            <h1>{{ $t("forwho.who4") }}</h1>
+            <hr />
+            <p>{{ $t("forwho.description4") }}</p>
+          </div>
+          <div class="img">
+            <img
+              src="@/assets/images/jungle_0.jpg"
+              alt="jungle"
+              width="240"
+              height="156"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="bg">
+        <div id="forwho" class="container">
+          <div class="textbox">
+            <h5>{{ $t("forwho.h5") }}</h5>
+            <h1>{{ $t("forwho.who5") }}</h1>
+            <hr />
+            <p>{{ $t("forwho.description5") }}</p>
+          </div>
+          <div class="img">
+            <img
+              src="@/assets/images/pole-expedition-member.jpg"
+              alt="pole-expedition-member"
+              width="240"
+              height="160"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="bg">
+        <div id="forwho" class="container">
+          <div class="textbox">
+            <h5>{{ $t("forwho.h5") }}</h5>
+            <h1>{{ $t("forwho.who6") }}</h1>
+            <hr />
+            <p>{{ $t("forwho.description6") }}</p>
+          </div>
+          <div class="img">
+            <img
+              src="@/assets/images/diver_0.jpg"
+              alt="diver"
+              width="240"
+              height="142"
+            />
+          </div>
         </div>
       </div>
     </main>
@@ -146,11 +139,7 @@ export default {
 
 main #forwho {
   display: flex;
-}
-
-#forwho.bg {
-  display: flex;
-  flex-direction: column;
+  white-space: pre-line;
 }
 
 #forwho.container {
@@ -167,8 +156,15 @@ h5 {
 }
 
 #forwho.container img {
-  width: 244px;
+  width: 240px;
   object-fit: contain;
   border: 2px solid white;
+}
+
+@media screen and (max-width: 800px) {
+  #forwho.container {
+    width: 100%;
+    justify-content: space-between;
+  }
 }
 </style>

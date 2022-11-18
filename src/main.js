@@ -5,6 +5,7 @@ import App from './App.vue';
 import HomePage from './components/HomePage.vue';
 import ContactPage from './components/ContactPage.vue';
 import ForWhoPage from './components/ForWhoPage.vue';
+import i18n from './i18n'
 
 const router = createRouter ({
     history: createWebHistory(),
@@ -17,6 +18,7 @@ const router = createRouter ({
 });
 
 const app = createApp(App);
+app.use(i18n);
 app.use(router);
 app.mount( "#app" );
 
