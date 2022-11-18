@@ -26,8 +26,8 @@ export default {
           <div class="textbox">
             <h1>{{ $t("contact.h1") }}</h1>
             <p>{{ $t("contact.p") }}</p>
-            <h3>Doctor Wim Hullaert</h3>
-            <h4>Dorpsstraat 46, 9080 Lochristi, BELGIUM</h4>
+            <h3>{{ $t("contact.doctor") }} Wim Hullaert</h3>
+            <h4>Dorpsstraat 46, 9080 Lochristi, {{ $t("contact.belgium") }}</h4>
             <h4>+32 475787118</h4>
             <a href="mailto:whullaert@yahoo.com">whullaert@yahoo.com</a>
           </div>

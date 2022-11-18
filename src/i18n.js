@@ -58,10 +58,8 @@ const messages = {
    contact:{
       h1:'get in touch',
       p:'Are you planning an expedition? Preparing for a super marathon? Get in touch for medical advice, guidance, vaccinations and fysical tests to prepare you for your challenges.',
-      h3:'Doctor Wim Hullaert',
-      h4address:'Dorpsstraat 46, 9080 Lochristi, BELGIUM',
-      h4number:'+32 475787118',
-      a:'whullaert@yahoo.com'
+      doctor:'Doctor',
+      belgium:'Belgium',
    }
   },
   nl: {
@@ -101,11 +99,8 @@ const messages = {
     contact:{
       h1:'NEEM CONTACT OP',
       p:'Gaat u op expeditie? Bereidt u zich voor op een super marathon? Neem contact op voor medisch advies, begeleiding, vaccinaties en fysische proeven.',
-      h3:'Doctor Wim Hullaert',
-      h4address:'Dorpsstraat 46, 9080 Lochristi, BELGIUM',
-      h4number:'+32 475787118',
-      a:'whullaert@yahoo.com'
-
+      doctor:'Dokter',
+      belgium:'België',
     }
   },
 };
