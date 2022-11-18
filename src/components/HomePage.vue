@@ -119,7 +119,7 @@ h2 {
   font-family: "Maven Pro", sans-serif;
   font-weight: normal;
   font-size: 14px;
-  line-height: 1.5vh;
+  line-height: 20px;
 }
 
 .language a,
