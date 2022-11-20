@@ -1,5 +1,18 @@
 {
   "projects": {
     "default": "mountain-expedition-medicine"
-  }
+  },
+  "targets": {
+    "mountain-expedition-medicine": {
+      "hosting": {
+        "dutch": [
+          "berg-en-expeditiegeneeskunde"
+        ],
+        "english": [
+          "mountain-expedition-medicine"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }
