@@ -6,7 +6,7 @@ const messages = {
       forwho:'for who',
     },
     home: {
-      h1:'MEDICAL ADVICE & GUIDANCE',
+      h1:'MEDICAL & GUIDANCE',
       h2:'FOR ADVENTURERS, MOUNTAINEERS, SPORTERS AND EXPEDITIONS TO EXTREME/ EXOTIC REGIONS',
       p1:'The interest in trekkings in remote areas,in people who want to maximize medical self-reliance, in persons who will make a unique journey (once in a life time) f.e trekking around the Annapurna pushed me to share my knowledge ,and promote best medical practice in remote environments in order to reduce health risks and to increase self-reliance in this areas.',
       expertise1:'Course high altitude medicine Cusco Peru 2010',
