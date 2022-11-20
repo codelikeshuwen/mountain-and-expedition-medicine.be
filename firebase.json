@@ -1,12 +1,28 @@
 {
-  "hosting": {
-    "public": "dist",
-    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
-    ]
-  }
+  "hosting": [
+    {
+      "site": "berg-en-expeditiegeneeskunde",
+      "target": "dutch", // "blog" is the applied TARGET_NAME for the Hosting site "myapp-blog"
+      "public": "dist", // contents of this folder are deployed to the site "myapp-blog"
+      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    },
+    {
+      "site": "mountain-expedition-medicine",
+      "target": "english", // "app" is the applied TARGET_NAME for the Hosting site "myapp-app"
+      "public": "dist", // contents of this folder are deployed to the site "myapp-app"
+      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
 }
