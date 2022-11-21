@@ -1,7 +1,7 @@
 <template>
   <section id="main-header">
     <div class="language">
-      <a href="hhttps://berg-en-expeditiegeneeskunde.be">Nederlands</a>
+      <a href="https://berg-en-expeditiegeneeskunde.be">Nederlands</a>
       <a href="https://mountain-and-expedition-medicine.be">English</a>
     </div>
 
