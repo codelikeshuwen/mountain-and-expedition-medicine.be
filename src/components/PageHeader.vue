@@ -1,8 +1,8 @@
 <template>
   <section id="main-header">
     <div class="language">
-      <a href="https://bergenexpeditiegeneeskunde.be">Nederlands</a>
-      <a href="https://mountainandexpeditionmedicine.be">English</a>
+      <a href="hhttps://berg-en-expeditiegeneeskunde.be">Nederlands</a>
+      <a href="https://mountain-and-expedition-medicine.be">English</a>
     </div>
 
     <div class="header-container">
